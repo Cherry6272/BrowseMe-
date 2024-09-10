@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="https://pps.whatsapp.net/v/t61.24694-24/442098870_1607790309764394_2471704662431637929_n.jpg?ccb=11-4&oh=01_Q5AaIL9R7qTnYyy3_w7ovIn9zdNSZkC5OO4s9pYMVn07vI3V&oe=66A6F786&_nc_sid=e6ed6c&_nc_cat=101" alt="Your Name" type="image/x-icon">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="background-color: #f0d8da;"><span style="color: black;">CHERAN N P</span> </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="mypic.jpeg" alt="Your Name" class="profile-pic">
+        <p></p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item" onclick="openModal('project1')">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="portfolio-item" onclick="openModal('project2')">
+                <h3>Project Title 2</h3>
+                <p>Short description of the project.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="portfolio-item" onclick="openModal('project3')">
+                <h3>Project Title 3</h3>
+                <p>Short description of the project.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="connect">
+        <form id="contact-form">
+            <div><input type="text" placeholder="Your Name" required></div>
+            <div><input type="email" placeholder="Your Email" required></div>
+            <div><textarea placeholder="Your Message" required></textarea></div>
+            <button type="submit">Send</button>
+        </form>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="www.imge.com" target="">click
+
+    <footer>
+        <p>Connect with me on &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/cherannp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>&nbsp;&nbsp; &nbsp;&nbsp;  
+            <!--<a href="#">GitHub</a>-->
+        </p>
+    </footer>
+
+<!--MODAL SCRIPT FOR JS-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-description">Detailed description of the project.</p>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
